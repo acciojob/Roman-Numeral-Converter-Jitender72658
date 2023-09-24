@@ -12,9 +12,9 @@ function convertToRoman(num) {
   let roman = '';
 
   for (let i = 0; i < obj.length; i++) {
-    while (num >= obj[i].value) {
-      roman += obj[i].symbol;
-      num -= obj[i].value;
+    while (num >= obj[i][1]) {
+      roman += obj[i][0];
+      num -= obj[i][1];
     }
   }
 
